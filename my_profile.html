@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>とある大学生の練習用プロフィール</title>
+</head>
+<body>
+<h1>自己紹介プロフィール</h1>
+<img src="img/ninja400.jpg" alt="愛車のバイク" width="300">
+<p>このサイトはとある工学生がHTMLの学習を進めるために作ったサイトです。</p>
+
+<h2>一週間の予定を紹介</h2>
+
+<table border="1">
+    <tr>
+        <th>曜日</th>
+        <th>予定</th>
+    </tr>
+
+    <tr>
+        <th>月曜日</th>
+        <td>対面授業</td>
+    </tr>
+
+    <tr>
+        <th>火曜日</th>
+        <td>online授業</td>
+    </tr>
+
+    <tr>
+        <th>水曜日</th>
+        <td>対面授業</td>
+    </tr>
+
+    <tr>
+        <th>木曜日</th>
+        <td>対面授業</td>
+    </tr>
+
+    <tr>
+        <th>金曜日</th>
+        <td>対面授業</td>
+    </tr>
+
+    <tr>
+        <th>土曜日</th>
+        <td>ツーリング</td>
+    </tr>
+
+    <tr>
+        <th>日曜日</th>
+        <td>休み</td>
+    </tr>
+</table>
+
+
+
+<h2>私の趣味を紹介します</h2>
+<ul>
+    <li>バイク</li>
+    <li>音楽ゲーム</li>
+</ul>
+<h2>お金があったら使う先ベスト5</h2>
+<ol>
+    <li>バイクのカスタム</li>
+    <li>近場の日帰り旅行</li>
+    <li>ラーメン巡り</li>
+    <li>飲み会</li>
+    <li>ポーカー屋さん</li>
+</ol>
+<h2>おすすめサイト</h2>
+<p>
+    <a href="https://www.kawasaki-motors.com/ja-jp/">
+    Kawasaki公式サイト
+    </a>
+</p>
+
+<h2>このページの感想を送る</h2>
+
+<form method="get">
+
+    <dl>
+        <dt>
+            <label for="visitor-name">お名前</label>
+        </dt>
+
+        <dd>
+            <input type="text"
+                   id="visitor-name"
+                   name="visitor-name"
+                   required
+                   placeholder="ねこ太郎">
+        </dd>
+
+        <dt>いちばんよかったところ</dt>
+
+        <dd>
+            <label>
+                <input type="radio" name="best" value="hobby">
+                趣味紹介
+            </label>
+
+            <label>
+                <input type="radio" name="best" value="best5">
+                ベスト5
+            </label>
+
+            <label>
+                <input type="radio" name="best" value="schedule">
+                一週間の予定
+            </label>
+        </dd>
+
+        <dt>
+            <label for="comment">感想</label>
+        </dt>
+
+        <dd>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </dd>
+
+    </dl>
+
+    <button type="submit">送信する</button>
+
+</form>
+
+</body>
+</html>
